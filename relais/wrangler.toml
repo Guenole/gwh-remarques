@@ -1,0 +1,12 @@
+# Relais des remarques GuenoWasHere. Déployer : npx wrangler deploy (depuis ce dossier).
+# Le jeton GitHub ne s'écrit jamais ici : npx wrangler secret put GITHUB_TOKEN
+name = "gwh-remarques"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[vars]
+DEPOT = "Guenole/gwh-remarques-donnees"
+EQUIPE = "Guénolé"
+# Prototypes autorisés (séparés par des virgules). Ajouter l'identifiant d'un nouveau prototype puis redéployer.
+PROJETS = "alexis-de-cocagne-zprrub"
